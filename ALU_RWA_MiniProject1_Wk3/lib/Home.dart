@@ -9,14 +9,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(
-            child: Text(
+        title: Text(
           "DoughnutNation",
           style: GoogleFonts.cabin(
             textStyle:
-                TextStyle(color: Colors.white, letterSpacing: .5, fontSize: 24),
+                TextStyle(color: Colors.white, letterSpacing: .5, fontSize: 21),
           ),
-        )),
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
@@ -57,8 +56,14 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
         padding: EdgeInsets.zero,
         children: <Widget>[
           UserAccountsDrawerHeader(
-            accountName: Text("Melo Cruz"),
-            accountEmail: Text("mcruz@gmail.com"),
+            accountName: Text(
+              "Melo Cruz",
+              style: GoogleFonts.cabin(),
+            ),
+            accountEmail: Text(
+              "mcruz@gmail.com",
+              style: GoogleFonts.cabin(),
+            ),
             currentAccountPicture: CircleAvatar(
               child: Column(
                 children: <Widget>[
