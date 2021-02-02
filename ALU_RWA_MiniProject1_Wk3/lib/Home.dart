@@ -9,6 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFFEF9A9A),
         title: Text(
           "DoughnutNation",
           style: GoogleFonts.cabin(
@@ -33,6 +34,20 @@ class Home extends StatelessWidget {
             label: 'Settings',
           ),
         ],
+      ),
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(30),
+              child: Text(
+                'Welcome to Doughnut Nation',
+                style: GoogleFonts.cabin(
+                    textStyle: TextStyle(letterSpacing: .5, fontSize: 22)),
+              ),
+            ),
+          ],
+        ),
       ),
       drawer: NavigateDrawer(
         uid: this.uid,
