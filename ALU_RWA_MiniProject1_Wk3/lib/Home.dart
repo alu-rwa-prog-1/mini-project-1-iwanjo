@@ -39,7 +39,7 @@ class Home extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(30),
+              padding: EdgeInsets.all(25),
               child: Text(
                 'Welcome to Doughnut Nation',
                 style: GoogleFonts.cabin(
