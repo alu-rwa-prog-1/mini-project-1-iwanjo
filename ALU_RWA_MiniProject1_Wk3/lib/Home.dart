@@ -79,6 +79,9 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
               "mcruz@gmail.com",
               style: GoogleFonts.cabin(),
             ),
+            decoration: BoxDecoration(
+              color: Color(0xFFEF9A9A),
+            ),
             currentAccountPicture: CircleAvatar(
               child: Column(
                 children: <Widget>[
