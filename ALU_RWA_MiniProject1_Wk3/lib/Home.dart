@@ -19,6 +19,9 @@ class Home extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xFFEF9A9A),
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.black,
         currentIndex: 0,
         items: [
           BottomNavigationBarItem(
