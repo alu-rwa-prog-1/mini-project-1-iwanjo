@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CategoryCard extends StatelessWidget {
   var _title;
@@ -9,6 +10,48 @@ class CategoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      width: 130,
+      height: 140,
+      child: Stack(
+        children: <Widget>[
+          Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Container(
+              width: 110,
+              height: 130,
+              padding: EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 16,
+              ),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Text(
+                  _title,
+                  style: GoogleFonts.cabin(
+                      textStyle: TextStyle(letterSpacing: .5, fontSize: 18)),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            right: 25,
+            child: Container(
+              height: 85,
+              width: 85,
+              decoration: BoxDecoration(
+                color: _bgColor,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Image.asset(
+                _imageUrl,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
