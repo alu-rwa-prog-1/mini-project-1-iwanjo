@@ -16,10 +16,23 @@ class Home extends StatelessWidget {
         title: Text(
           "DoughnutNation",
           style: GoogleFonts.cabin(
-            textStyle:
-                TextStyle(color: Colors.white, letterSpacing: .5, fontSize: 21),
+            textStyle: TextStyle(
+              color: Colors.white,
+              letterSpacing: .5,
+              fontSize: 21,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.more_vert,
+              color: Colors.white,
+            ),
+            onPressed: () {},
+          )
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: kBlueGreyColor,
@@ -41,39 +54,50 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(top: 30, bottom: 30),
-              child: Text(
-                'Welcome to Doughnut Nation',
-                style: GoogleFonts.cabin(
-                    textStyle: TextStyle(letterSpacing: .5, fontSize: 22)),
-              ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            buildCategoryList(),
-            SizedBox(
-              height: 20,
-            ),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 40),
-                child: Text(
-                  "Today's Deals",
-                  style: GoogleFonts.cabin(
-                    fontSize: 22,
-                    color: kRedColor,
-                    fontWeight: FontWeight.bold,
+      body: SafeArea(
+        bottom: false,
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 40),
+                  child: Text(
+                    'Welcome to DoughnutNation',
+                    style: GoogleFonts.cabin(
+                        textStyle: TextStyle(
+                      letterSpacing: .5,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    )),
                   ),
                 ),
               ),
-            )
-          ],
+              SizedBox(
+                height: 20,
+              ),
+              buildCategoryList(),
+              SizedBox(
+                height: 20,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 40),
+                  child: Text(
+                    "Today's Deals",
+                    style: GoogleFonts.cabin(
+                      fontSize: 22,
+                      color: kRedColor,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
       drawer: NavigateDrawer(
