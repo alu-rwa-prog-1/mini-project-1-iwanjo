@@ -111,10 +111,72 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
             ),
             title: Text(
               'Home',
-              style: GoogleFonts.cabin(
-                  color: Colors.black,
-                  letterSpacing: .5,
-                  fontWeight: FontWeight.bold),
+              style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
+            ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: new IconButton(
+              icon: new Icon(
+                Icons.search,
+                color: Colors.black,
+              ),
+            ),
+            title: Text(
+              'Search',
+              style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
+            ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: new IconButton(
+              icon: new Icon(
+                Icons.category,
+                color: Colors.black,
+              ),
+            ),
+            title: Text(
+              'Categories',
+              style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
+            ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: new IconButton(
+              icon: new Icon(
+                Icons.account_circle,
+                color: Colors.black,
+              ),
+            ),
+            title: Text(
+              'Profile',
+              style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
+            ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: new IconButton(
+              icon: new Icon(
+                Icons.track_changes,
+                color: Colors.black,
+              ),
+            ),
+            title: Text(
+              'Track Your Order',
+              style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
+            ),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: new IconButton(
+              icon: new Icon(
+                Icons.logout,
+                color: Colors.black,
+              ),
+            ),
+            title: Text(
+              'Log Out',
+              style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
             ),
             onTap: () {},
           ),
