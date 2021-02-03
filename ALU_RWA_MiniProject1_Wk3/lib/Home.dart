@@ -9,7 +9,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFEF9A9A),
+        // backgroundColor: Color(0xFFEF9A9A),
+        backgroundColor: Color(0xFF607D8B),
         title: Text(
           "DoughnutNation",
           style: GoogleFonts.cabin(
@@ -19,9 +20,9 @@ class Home extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xFFEF9A9A),
+        backgroundColor: Color(0xFF607D8B),
         selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey[400],
         currentIndex: 0,
         items: [
           BottomNavigationBarItem(
@@ -83,7 +84,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
               style: GoogleFonts.cabin(),
             ),
             decoration: BoxDecoration(
-              color: Color(0xFFEF9A9A),
+              color: Color(0xFF607D8B),
             ),
             currentAccountPicture: CircleAvatar(
               child: Column(
