@@ -102,6 +102,22 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
               ),
             ),
           ),
+          ListTile(
+            leading: new IconButton(
+              icon: new Icon(
+                Icons.home,
+                color: Colors.black,
+              ),
+            ),
+            title: Text(
+              'Home',
+              style: GoogleFonts.cabin(
+                  color: Colors.black,
+                  letterSpacing: .5,
+                  fontWeight: FontWeight.bold),
+            ),
+            onTap: () {},
+          ),
         ],
       ),
     );
