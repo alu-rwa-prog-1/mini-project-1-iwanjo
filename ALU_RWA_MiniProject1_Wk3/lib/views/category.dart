@@ -31,7 +31,7 @@ class CategoryCard extends StatelessWidget {
                 child: Text(
                   _title,
                   style: GoogleFonts.cabin(
-                      textStyle: TextStyle(letterSpacing: .5, fontSize: 18)),
+                      textStyle: TextStyle(letterSpacing: .3, fontSize: 15)),
                 ),
               ),
             ),
@@ -43,7 +43,7 @@ class CategoryCard extends StatelessWidget {
               width: 85,
               decoration: BoxDecoration(
                 color: _bgColor,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(80),
               ),
               child: Image.asset(
                 _imageUrl,

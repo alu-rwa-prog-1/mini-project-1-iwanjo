@@ -12,6 +12,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kBlueGreyColor,
+        centerTitle: true,
         title: Text(
           "DoughnutNation",
           style: GoogleFonts.cabin(
@@ -44,7 +45,7 @@ class Home extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(25),
+              padding: EdgeInsets.only(top: 30, bottom: 30),
               child: Text(
                 'Welcome to Doughnut Nation',
                 style: GoogleFonts.cabin(
@@ -57,6 +58,20 @@ class Home extends StatelessWidget {
             buildCategoryList(),
             SizedBox(
               height: 20,
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 40),
+                child: Text(
+                  "Today's Deals",
+                  style: GoogleFonts.cabin(
+                    fontSize: 22,
+                    color: kRedColor,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             )
           ],
         ),
