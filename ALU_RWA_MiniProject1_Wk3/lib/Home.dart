@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: kRedColor,
+        backgroundColor: kBlueGreyColor,
         title: Text(
           "DoughnutNation",
           style: GoogleFonts.cabin(
@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: kRedColor,
+        backgroundColor: kBlueGreyColor,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey[400],
         currentIndex: 0,
@@ -51,6 +51,13 @@ class Home extends StatelessWidget {
                     textStyle: TextStyle(letterSpacing: .5, fontSize: 22)),
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            buildCategoryList(),
+            SizedBox(
+              height: 20,
+            )
           ],
         ),
       ),
@@ -70,9 +77,29 @@ class Home extends StatelessWidget {
           ),
           CategoryCard(
             'Plain',
-            'assets/plain.png',
+            'assets/plain.jpg',
             kOrangeColor,
-          )
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          CategoryCard(
+            'Caramel',
+            'assets/caramel.jpg',
+            kBlueGreyColor,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          CategoryCard('Coconut', 'assets/coconut.jpg', kBlueColor),
+          SizedBox(
+            width: 10,
+          ),
+          CategoryCard('Red Velvet', 'assets/red-velvet.jpg', kRedColor),
+          SizedBox(
+            width: 10,
+          ),
+          CategoryCard('Sprinkles', 'assets/sprinkles.jpg', kPinkColor),
         ],
       ),
     );
@@ -103,7 +130,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
               style: GoogleFonts.cabin(),
             ),
             decoration: BoxDecoration(
-              color: kRedColor,
+              color: kBlueGreyColor,
             ),
             currentAccountPicture: CircleAvatar(
               child: Column(
@@ -163,12 +190,12 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
           ListTile(
             leading: new IconButton(
               icon: new Icon(
-                Icons.account_circle,
+                Icons.track_changes,
                 color: Colors.black,
               ),
             ),
             title: Text(
-              'Profile',
+              'Track Your Order',
               style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
             ),
             onTap: () {},
@@ -176,12 +203,12 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
           ListTile(
             leading: new IconButton(
               icon: new Icon(
-                Icons.track_changes,
+                Icons.account_circle,
                 color: Colors.black,
               ),
             ),
             title: Text(
-              'Track Your Order',
+              'Profile',
               style: GoogleFonts.cabin(color: Colors.black, letterSpacing: .5),
             ),
             onTap: () {},
