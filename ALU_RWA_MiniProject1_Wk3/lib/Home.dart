@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: kBlueGreyColor,
+        backgroundColor: kRedColor,
         centerTitle: true,
         title: Text(
           "DoughnutNation",
@@ -35,7 +35,7 @@ class Home extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: kBlueGreyColor,
+        backgroundColor: kRedColor,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey[400],
         currentIndex: 0,
@@ -75,6 +75,33 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Text(
+                      "Categories",
+                      style: GoogleFonts.cabin(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: .5),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                    child: TextButton.icon(
+                      label: Text("All Categories"),
+                      icon: Icon(Icons.category),
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
               SizedBox(
                 height: 20,
               ),
@@ -90,7 +117,6 @@ class Home extends StatelessWidget {
                     "Today's Deals",
                     style: GoogleFonts.cabin(
                       fontSize: 22,
-                      color: kRedColor,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -169,7 +195,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
               style: GoogleFonts.cabin(),
             ),
             decoration: BoxDecoration(
-              color: kBlueGreyColor,
+              color: kRedColor,
             ),
             currentAccountPicture: CircleAvatar(
               child: Column(
