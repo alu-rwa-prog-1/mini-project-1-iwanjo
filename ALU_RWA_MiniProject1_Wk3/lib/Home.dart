@@ -1,5 +1,7 @@
+import 'package:ALU_RWA_MiniProject1_Wk3/views/category.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ALU_RWA_MiniProject1_Wk3/variables.dart';
 
 class Home extends StatelessWidget {
   Home({this.uid});
@@ -9,8 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: Color(0xFFEF9A9A),
-        backgroundColor: Color(0xFF607D8B),
+        backgroundColor: kRedColor,
         title: Text(
           "DoughnutNation",
           style: GoogleFonts.cabin(
@@ -20,7 +21,7 @@ class Home extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xFF607D8B),
+        backgroundColor: kRedColor,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey[400],
         currentIndex: 0,
@@ -58,6 +59,24 @@ class Home extends StatelessWidget {
       ),
     );
   }
+
+  buildCategoryList() {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: <Widget>[
+          SizedBox(
+            width: 30,
+          ),
+          CategoryCard(
+            'Plain',
+            'assets/plain.png',
+            kOrangeColor,
+          )
+        ],
+      ),
+    );
+  }
 }
 
 class NavigateDrawer extends StatefulWidget {
@@ -84,7 +103,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
               style: GoogleFonts.cabin(),
             ),
             decoration: BoxDecoration(
-              color: Color(0xFF607D8B),
+              color: kRedColor,
             ),
             currentAccountPicture: CircleAvatar(
               child: Column(
