@@ -4,6 +4,13 @@
 
 In this project, I created a mock doughnut delivery app with Flutter called DoughnutNation. Find the screenshots below:
 
+## How to Test
+
+- Clone the Repo
+- Make sure to cd to ALU_RWA_MiniProject1_Wk3
+- Ensure you are running the latest version of Flutter and have set the PATH variable
+- run: flutter run
+
 ## Landing Page
 
 ![Landing Page Screenshot](ALU_RWA_MiniProject1_Wk3/screenshots/full.jpeg)
@@ -24,3 +31,6 @@ In this project, I created a mock doughnut delivery app with Flutter called Doug
 ## Design Grid
 
 ![Design Grid](ALU_RWA_MiniProject1_Wk3/assets/grid.png)
+
+## Contact
+In case of any issues, feel free to reach me at i.wanjohi@alustudent.com
