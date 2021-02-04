@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this project, I created a mock doughnut delivery app with Flutter called DoughnutNation. Find the screenshots below:
+In this project, I created a mock doughnut delivery app with Flutter called DoughnutNation. 
 
 ## How to Test
 
@@ -10,6 +10,14 @@ In this project, I created a mock doughnut delivery app with Flutter called Doug
 - Make sure to cd to ALU_RWA_MiniProject1_Wk3
 - Ensure you are running the latest version of Flutter and have set the PATH variable
 - run: flutter run
+
+## Resources Used
+
+- GoogleFonts
+- Flutter Launcher Icons
+- Widgets: SingleChildScrollView, Scaffold, Container, OOP Classes, Rows, Drawers, Cards, TextButton, Icons, etc.
+
+Find the screenshots below:
 
 ## Landing Page
 
