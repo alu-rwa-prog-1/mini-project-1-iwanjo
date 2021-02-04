@@ -1,4 +1,5 @@
 import 'package:ALU_RWA_MiniProject1_Wk3/views/category.dart';
+import 'package:ALU_RWA_MiniProject1_Wk3/views/product.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ALU_RWA_MiniProject1_Wk3/variables.dart';
@@ -27,11 +28,18 @@ class Home extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(
+              Icons.search,
+              color: Colors.white,
+            ),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(
               Icons.more_vert,
               color: Colors.white,
             ),
             onPressed: () {},
-          )
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -90,7 +98,7 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                     child: TextButton.icon(
                       label: Text("All Categories"),
                       icon: Icon(Icons.category),
@@ -109,19 +117,35 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 40),
-                  child: Text(
-                    "Today's Deals",
-                    style: GoogleFonts.cabin(
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                    child: Text(
+                      "Today's Deals",
+                      style: GoogleFonts.cabin(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: .5),
                     ),
                   ),
-                ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                    child: TextButton.icon(
+                      label: Text("View All"),
+                      icon: Icon(Icons.business),
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
               ),
+              buildProductList(),
+              SizedBox(
+                height: 20,
+              ),
+              buildProductList2(),
             ],
           ),
         ),
@@ -129,6 +153,33 @@ class Home extends StatelessWidget {
       drawer: NavigateDrawer(
         uid: this.uid,
       ),
+    );
+  }
+
+  buildProductList() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        SizedBox(
+          width: 30,
+        ),
+        ProductCard('Chocolate Donut', 'assets/choc.jpg', '700RWF'),
+        ProductCard('Blueberry Donut', 'assets/blueberry.jpg', '800RWF'),
+      ],
+    );
+  }
+
+  buildProductList2() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        SizedBox(
+          width: 30,
+        ),
+        ProductCard(
+            'Strawberry Donut', 'assets/strawberry-flake.jpg', '800RWF'),
+        ProductCard('Jelly Filled Donut', 'assets/jelly.jpg', '800RWF'),
+      ],
     );
   }
 
@@ -219,6 +270,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
                 Icons.home,
                 color: Colors.black,
               ),
+              onPressed: () {},
             ),
             title: Text(
               'Home',
@@ -232,6 +284,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
                 Icons.search,
                 color: Colors.black,
               ),
+              onPressed: () {},
             ),
             title: Text(
               'Search',
@@ -245,6 +298,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
                 Icons.category,
                 color: Colors.black,
               ),
+              onPressed: () {},
             ),
             title: Text(
               'Categories',
@@ -258,6 +312,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
                 Icons.track_changes,
                 color: Colors.black,
               ),
+              onPressed: () {},
             ),
             title: Text(
               'Track Your Order',
@@ -271,6 +326,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
                 Icons.account_circle,
                 color: Colors.black,
               ),
+              onPressed: () {},
             ),
             title: Text(
               'Profile',
@@ -284,6 +340,7 @@ class _NavigateDrawerState extends State<NavigateDrawer> {
                 Icons.logout,
                 color: Colors.black,
               ),
+              onPressed: () {},
             ),
             title: Text(
               'Log Out',

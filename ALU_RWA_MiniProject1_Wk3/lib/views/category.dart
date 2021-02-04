@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// ignore: must_be_immutable
 class CategoryCard extends StatelessWidget {
   var _title;
   var _imageUrl;
@@ -21,7 +22,7 @@ class CategoryCard extends StatelessWidget {
             ),
             child: Container(
               width: 110,
-              height: 430,
+              height: 130,
               padding: EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 16,

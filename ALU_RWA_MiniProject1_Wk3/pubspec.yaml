@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   
   google_fonts: ^1.1.2
+  flutter_launcher_icons: ^0.8.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -34,6 +35,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  image_path: "assets/Doughnutnation.png"
+  android: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -54,6 +59,10 @@ flutter:
     - assets/plain.jpg
     - assets/red-velvet.jpg
     - assets/sprinkles.jpg
+    - assets/choc.jpg
+    - assets/jelly.jpg
+    - assets/blueberry.jpg
+    - assets/strawberry-flake.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

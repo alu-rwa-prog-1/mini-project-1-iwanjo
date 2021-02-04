@@ -1,16 +1,23 @@
-# ALU_RWA_MiniProject1_Wk3
+# ALU_RWA_MiniProject1_Wk3 - DoughnutNation, By Ian Kamanu Wanjohi
 
-A new Flutter project.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+In this project, I created a mock doughnut delivery app with Flutter called DoughnutNation. Find the screenshots below:
 
-A few resources to get you started if this is your first Flutter project:
+## Landing Page
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Landing Page Screenshot](ALU_RWA_MINIPROJECT1_WK3/screenshots/full.jpeg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Today's Deals
+
+![Today's Deals](ALU_RWA_MINIPROJECT1_WK3/screenshots/deals.jpeg)
+
+## Menu Drawer
+
+![Menu Drawer](ALU_RWA_MINIPROJECT1_WK3/screenshots/drawer.jpeg)
+
+## Scrollable Categories
+
+![Scrollable Categories](ALU_RWA_MINIPROJECT1_WK3/screenshots/scroll.jpeg)
