@@ -20,3 +20,7 @@ In this project, I created a mock doughnut delivery app with Flutter called Doug
 ## Scrollable Categories
 
 ![Scrollable Categories](ALU_RWA_MiniProject1_Wk3/screenshots/scroll.jpeg)
+
+## Design Grid
+
+![Design Grid](ALU_RWA_MiniProject1_Wk3/assets/grid.png)
