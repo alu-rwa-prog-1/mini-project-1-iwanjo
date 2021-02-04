@@ -11,12 +11,12 @@ In this project, I created a mock doughnut delivery app with Flutter called Doug
 
 ## Today's Deals
 
-![Today's Deals](ALU_RWA_MiniProject1_WK3/screenshots/deals.jpeg)
+![Today's Deals](ALU_RWA_MiniProject1_Wk3/screenshots/deals.jpeg)
 
 ## Menu Drawer
 
-![Menu Drawer](ALU_RWA_MiniProject1_WK3/screenshots/drawer.jpeg)
+![Menu Drawer](ALU_RWA_MiniProject1_Wk3/screenshots/drawer.jpeg)
 
 ## Scrollable Categories
 
-![Scrollable Categories](ALU_RWA_MiniProject1_WK3/screenshots/scroll.jpeg)
+![Scrollable Categories](ALU_RWA_MiniProject1_Wk3/screenshots/scroll.jpeg)
